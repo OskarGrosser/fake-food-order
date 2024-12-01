@@ -24,7 +24,6 @@ body {
 
 .cart {
   width: 100%;
-  overflow-x: hidden;
 }
 .cart__content {
   margin-inline-start: auto;

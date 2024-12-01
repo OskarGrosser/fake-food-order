@@ -45,6 +45,8 @@ function showCart(animated) {
   cart.style.cssText = "";
 
   if (animated) {
+    cart.style.overflowX = "hidden";
+
     const animOptions = { duration: 250, easing: "ease-out" };
 
     const cartKeyframes = [
