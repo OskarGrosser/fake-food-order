@@ -1,0 +1,32 @@
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+.page {
+  display: grid;
+  grid-template-rows:
+    [page__header] auto
+    [page__content] 1fr
+    [page__footer] auto;
+}
+.page__header {
+  grid-row: page__header;
+  position: sticky;
+  top: 0;
+  height: 5rem;
+  background-color: orange;
+  box-shadow: 0 0 1rem black;
+}
+.page__content {
+  grid-row: page__content;
+  background-color: white;
+}
+.page__footer {
+  grid-row: page__footer;
+  height: 12rem;
+  background-color: lightgray;
+}
