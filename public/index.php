@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="/resources/styles/index.css">
+    <script type="module" src="/resources/scripts/index.js"></script>
   </head>
   <body class="page">
     <header class="page__header separated--inline-start">

@@ -126,3 +126,6 @@ body {
   grid-auto-columns: auto;
   grid-auto-flow: column;
 }
+.separated__child--order-1 {
+  order: 1;
+}
