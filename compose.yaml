@@ -1,0 +1,14 @@
+services:
+  webserver:
+    image: help-trynn/webserver
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - type: bind
+        read_only: true
+        source: ./
+        target: /var/www/html
+    ports:
+      - "80:80"
+      - "443:443"
