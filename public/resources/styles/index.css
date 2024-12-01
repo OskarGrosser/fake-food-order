@@ -42,6 +42,13 @@ body {
   }
 }
 
+.collapsed__end--block {
+  margin-block-end: 0;
+}
+.collapsed__start--block {
+  margin-block-start: 0;
+}
+
 .flexed,
 .flexed--center {
   display: flex;
@@ -68,13 +75,6 @@ body {
   .menu__content {
     padding-inline: 8rem;
   }
-}
-
-.collapsed__end--block {
-  margin-block-end: 0;
-}
-.collapsed__start--block {
-  margin-block-start: 0;
 }
 
 .page {
