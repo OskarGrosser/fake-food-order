@@ -7,8 +7,11 @@
   </head>
   <body class="page">
     <header class="page__header"></header>
-    <main class="page__content">
-      <section class="menu">
+    <main class="page__content layered">
+      <section id="cart" class="cart layered__child--order-1">
+        <div class="cart__content"></div>
+      </section>
+      <section class="menu layered__child">
         <header class="menu__header restaurant">
           <div class="banner">
             <div class="banner__content menu__content">
