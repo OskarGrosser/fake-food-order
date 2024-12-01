@@ -6,6 +6,31 @@ body {
   min-height: 100%;
 }
 
+.banner {
+  padding-block-end: 1rem;
+  height: 200px;
+  display: grid;
+  align-items: end;
+  background-image: url(https://picsum.photos/id/704/1900/400);
+  background-position-x: center;
+  background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .banner {
+    padding-block-end: 2rem;
+    height: 400px;
+  }
+}
+
+.menu__content {
+  padding-inline: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .menu__content {
+    padding-inline: 8rem;
+  }
+}
+
 .page {
   display: grid;
   grid-template-rows:
@@ -29,4 +54,9 @@ body {
   grid-row: page__footer;
   height: 12rem;
   background-color: lightgray;
+}
+
+.restaurant__logo {
+  border-radius: .75rem;
+  box-shadow: 0 0 .75rem black;
 }
