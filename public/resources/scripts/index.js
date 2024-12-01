@@ -22,8 +22,12 @@ function layoutPageContent(isLargeScreen) {
   toggleCart(isLargeScreen);
 }
 
+toggleCartButton.addEventListener("click", () => {
+  toggleCart();
+});
+
 function toggleCart(toVisible) {
-  if (toVisible) {
+  if (toVisible ?? !cart.checkVisibility()) {
     cart.style.cssText = "";
   } else {
     cart.style.display = "none";
