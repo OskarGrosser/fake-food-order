@@ -6,7 +6,14 @@
     <link rel="stylesheet" href="/resources/styles/index.css">
   </head>
   <body class="page">
-    <header class="page__header"></header>
+    <header class="page__header separated--inline-start">
+      <div class="separated__child flexed">
+        <a class="page__logo flexed__child flexed--center" href="/">Food Order</a>
+      </div>
+      <div class="separated__child flexed">
+        <button class="flexed__child ratio--1-1" aria-controls="cart">Cart</button>
+      </div>
+    </header>
     <main class="page__content layered">
       <section id="cart" class="cart layered__child--order-1">
         <div class="cart__content"></div>

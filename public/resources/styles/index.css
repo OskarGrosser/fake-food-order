@@ -41,6 +41,14 @@ body {
   }
 }
 
+.flexed,
+.flexed--center {
+  display: flex;
+}
+.flexed--center {
+  align-items: center;
+}
+
 .layered {
   display: grid;
 }
@@ -79,7 +87,7 @@ body {
   grid-row: page__header;
   position: sticky;
   top: 0;
-  height: 5rem;
+  padding: 1rem;
   background-color: orange;
   box-shadow: 0 0 1rem black;
 }
@@ -91,4 +99,30 @@ body {
   grid-row: page__footer;
   height: 12rem;
   background-color: lightgray;
+}
+.page__logo {
+  font-size: x-large;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+.ratio--1-1 {
+  aspect-ratio: 1/1;
+}
+
+.restaurant__logo {
+  border-radius: .75rem;
+  box-shadow: 0 0 .75rem black;
+}
+
+.separated,
+.separated--inline-start {
+  display: grid;
+}
+.separated--inline-start {
+  grid-template-columns: 1fr;
+  grid-auto-columns: auto;
+  grid-auto-flow: column;
 }
